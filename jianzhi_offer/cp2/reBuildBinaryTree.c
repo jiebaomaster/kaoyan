@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "binaryTree.h"
 
+// P62 根据先序遍历和中序遍历生成二叉树
+
 int main() {
     BinaryTree T = NULL;
     int preOrderList[] = {1, 2, 4, 7, 3, 5, 6, 8};

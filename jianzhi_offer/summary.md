@@ -12,4 +12,16 @@
 
 [区别](https://blog.csdn.net/boy_of_god/article/details/81022316)
 
+### 指针的比较
+
+![指针比较示例](./picture4md/WeChat25df795e9045d90d2a91e529e38bc547.png)
+
 ## 算法相关
+
+## 编译器使用
+
+### 调试时显示数组的所有内容
+
+```shell script
+    (MyType(*)[50])myType
+```

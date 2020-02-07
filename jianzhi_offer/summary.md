@@ -1,11 +1,13 @@
 # 剑指offer学习总结
 
-## c语言语法相关
+## c语言
 
 ### c语言多文件编程
 
 [解决找不到标志符问题](https://stackoverflow.com/questions/58840157/how-to-fix-undefined-symbols-for-architecture-x86-64-in-c)
+
 [CMake使用](https://blog.csdn.net/u012150179/article/details/17852273)
+
 [多文件编程示例](https://blog.csdn.net/candcplusplus/article/details/7317472)
 
 ### 引用和指针
@@ -15,6 +17,23 @@
 ### 指针的比较
 
 ![指针比较示例](./picture4md/WeChat25df795e9045d90d2a91e529e38bc547.png)
+
+### 浮点数的比较
+
+[浮点数精度错误-知乎](https://www.zhihu.com/question/21175703)
+
+[浮点数比较的写法](https://blog.csdn.net/jk110333/article/details/8902707)
+
+[比较函数实例](./lib/doubleNumberEqual.h)
+
+### 位运算的使用
+
+```c
+int number = 1; // 任意整数
+bool isOddNumber = number & 1 == 1; // 按位与判断奇偶性
+int numberHalf = number >> 1; // 右移一位 = 除二
+int number2 = number << 1; // 左移一位 = 乘二
+```
 
 ## 算法相关
 

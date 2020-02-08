@@ -35,6 +35,19 @@ int numberHalf = number >> 1; // 右移一位 = 除二
 int number2 = number << 1; // 左移一位 = 乘二
 ```
 
+### 类型转化
+
+[c语言中的char int转化问题](https://blog.csdn.net/mkc1989/article/details/39085711)
+
+```c
+// char -> int
+char a = '1';
+printf("%d", a - '0'); // 输出 1
+
+// int -> char
+char *itoa(int value, char *string, int radix);
+```
+
 ## 算法相关
 
 ## 编译器使用

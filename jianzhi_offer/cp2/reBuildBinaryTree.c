@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "binaryTree.h"
+#include "../lib/binaryTree/binaryTree.h"
 
 // P62 根据先序遍历和中序遍历生成二叉树
 

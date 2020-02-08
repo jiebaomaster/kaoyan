@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "stack.h"
+#include "../lib/stack/stack.h"
 
 typedef struct {
     Stack *S1;

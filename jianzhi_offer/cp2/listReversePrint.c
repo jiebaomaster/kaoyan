@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "../lib/list/list.h"
 
 // P58 从尾到头打印链表
 

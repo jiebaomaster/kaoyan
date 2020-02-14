@@ -48,6 +48,11 @@ printf("%d", a - '0'); // 输出 1
 char *itoa(int value, char *string, int radix);
 ```
 
+### 支持自定义数据类型的队列
+
+- 数据类型用 void* 定义 [C queue implementation using void*](https://stackoverflow.com/questions/17731958/c-queue-implementation-using-void-good-or-bad-practice)
+- 数据类型用宏定义 ElemType 定义 [队列的动态链式存储实现—C语言](https://cloud.tencent.com/developer/article/1344611)
+
 ## 算法相关
 
 ### 链表
@@ -57,8 +62,8 @@ char *itoa(int value, char *string, int radix);
 对于单链表数据结构上的问题，当我们用一个指针不能解决问题的时候，可以尝试用两个指针来遍历链表。
 可以让其中一个指针遍历速度快一些，比如一次走两步，或者让他先在链表上走若干步。
 可见以下几例：
- - [寻找链表中的倒数第k个节点](./cp3/findKthToTail.c)
- - [寻找链表中环的入口节点](./cp3/findEntryNodeOfLoop.c)
+- [寻找链表中的倒数第k个节点](./cp3/findKthToTail.c)
+- [寻找链表中环的入口节点](./cp3/findEntryNodeOfLoop.c)
 
 ## cLion ide使用
 
@@ -67,3 +72,12 @@ char *itoa(int value, char *string, int radix);
 ```shell script
     (MyType(*)[50])myType
 ```
+
+## git使用
+
+### 修改历史提交的作者
+
+- 只修改少数几个 commit，可以采用 rebase
+  [git修改历史提交信息（包含作者信息）](https://blog.csdn.net/xiaowu_zhu/article/details/83024558)
+- 修改历史所有的 commit，可以采用官方脚本
+  [Changing author info](https://help.github.com/en/github/using-git/changing-author-info#platform-windows)

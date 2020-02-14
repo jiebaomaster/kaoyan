@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "../lib/binaryTree/binaryTree.h"
 
+/**
+ * P157 翻转二叉树
+ * @param T
+ */
 void mirrorBinary(BinaryTree T) {
     if (T == NULL) { return; }
 

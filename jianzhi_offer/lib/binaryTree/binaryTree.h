@@ -25,6 +25,12 @@ void inOrder(BinaryTree T);
 void postOrder(BinaryTree T);
 
 /**
+ * 层序遍历二叉树
+ * @param T
+ */
+void layoutOrder(BinaryTree T);
+
+/**
  * 通过先序遍历序列的中序遍历序列重建二叉树
  * 该二叉树的节点值不能相等
  * @param preOrder

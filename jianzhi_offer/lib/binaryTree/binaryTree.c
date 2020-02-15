@@ -29,6 +29,24 @@ void postOrder(BinaryTree T) {
     }
 }
 
+void layoutOrder(BinaryTree T) {
+    if (T == NULL) { return; }
+    LinkQueue Q;
+    initQueue(&Q);
+    enQueue(&Q, T);
+
+    BinaryTreeNode *pNode = NULL;
+    while (deQueue(&Q, (void **) &pNode)) {
+        printf("%d ", pNode->value);
+        if (pNode->lChild) {
+            enQueue(&Q, pNode->lChild);
+        }
+        if (pNode->rChild) {
+            enQueue(&Q, pNode->rChild);
+        }
+    }
+}
+
 /**
  * 新建一个树节点
  * @param value
@@ -121,4 +139,6 @@ BinaryTree constructByLayoutOrder(int *layoutOrder, int length) {
 //                  NULL_NODE_VALUE, 10};
 //    BinaryTree T = constructByLayoutOrder(data, 15);
 //    preOrder(T);
+//    printf("\n");
+//    layoutOrder(T);
 //}

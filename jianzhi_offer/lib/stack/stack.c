@@ -26,7 +26,10 @@ bool push(Stack *S, ElemType value) {
 
 bool pop(Stack *S, ElemType *value) {
     if (S->top == S->data) { return false; }
-    *value = *--S->top;
+    int top = *--S->top;
+    if (value != NULL) { // 支持 value 传 NULL，即不需要获取栈顶值
+        *value = top;
+    }
     return true;
 }
 

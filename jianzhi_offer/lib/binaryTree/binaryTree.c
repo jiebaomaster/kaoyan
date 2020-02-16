@@ -29,7 +29,7 @@ void postOrder(BinaryTree T) {
     }
 }
 
-void layoutOrder(BinaryTree T) {
+void levelOrder(BinaryTree T) {
     if (T == NULL) { return; }
     LinkQueue Q;
     initQueue(&Q);
@@ -140,5 +140,5 @@ BinaryTree constructByLayoutOrder(int *layoutOrder, int length) {
 //    BinaryTree T = constructByLayoutOrder(data, 15);
 //    preOrder(T);
 //    printf("\n");
-//    layoutOrder(T);
+//    levelOrder(T);
 //}

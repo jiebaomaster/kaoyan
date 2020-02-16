@@ -1,3 +1,4 @@
+#pragma once
 #define NULL_NODE_VALUE -2147483648 // int 类型能表示的最小数，当一个树中的节点的值为此数时，该节点实际不存在
 
 typedef struct BinaryTreeNode {
@@ -28,7 +29,7 @@ void postOrder(BinaryTree T);
  * 层序遍历二叉树
  * @param T
  */
-void layoutOrder(BinaryTree T);
+void levelOrder(BinaryTree T);
 
 /**
  * 通过先序遍历序列的中序遍历序列重建二叉树

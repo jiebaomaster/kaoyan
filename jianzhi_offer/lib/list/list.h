@@ -1,3 +1,5 @@
+#pragma once
+
 typedef struct ListNode { // 单链表
     int value; // 元素值
     struct ListNode *next; // 下一个节点的指针

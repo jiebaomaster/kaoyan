@@ -8,9 +8,10 @@
 /**
  * 用别名的方式使栈支持任意的数据元素类型
  */
-//typedef int ElemType;
-// useList: 1.specialLevelOrder.c
-typedef BinaryTreeNode* ElemType;
+// use list: 1.printValueRouteInBinaryTree
+typedef int ElemType;
+// use list: 1.specialLevelOrder
+//typedef BinaryTreeNode* ElemType;
 
 typedef struct {
     ElemType* data; // 数据元素数组

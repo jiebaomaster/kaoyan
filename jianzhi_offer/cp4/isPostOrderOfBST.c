@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "../lib/binaryTree/binaryTree.h"
 
 /**
  * P179 判断一个序列是否是二叉搜索树的后续遍历序列

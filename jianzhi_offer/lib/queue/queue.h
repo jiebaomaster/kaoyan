@@ -1,5 +1,6 @@
-#include <stdbool.h>
 #pragma once
+
+#include <stdbool.h>
 
 typedef struct ListNode { // 链表节点
     void *value; // 元素值，void* 可支持任何数据类型

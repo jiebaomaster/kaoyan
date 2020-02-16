@@ -1,6 +1,7 @@
+#pragma once
+
 #include <stdbool.h>
 #include "../binaryTree/binaryTree.h"
-#pragma once
 #define STACK_INIT_SIZE 5
 #define STACK_INCREMENT_SIZE 2
 

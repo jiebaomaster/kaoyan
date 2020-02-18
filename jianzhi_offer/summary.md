@@ -97,3 +97,14 @@ char *serializeStringResult = (char *) malloc(sizeof(char) * (strlen(serializeSt
   [git修改历史提交信息（包含作者信息）](https://blog.csdn.net/xiaowu_zhu/article/details/83024558)
 - 修改历史所有的 commit，可以采用官方脚本
   [Changing author info](https://help.github.com/en/github/using-git/changing-author-info#platform-windows)
+
+## TODO
+
+1. 红黑树
+2. partition算法
+
+   [被忽视的 partition 算法](https://www.jianshu.com/p/daebe1596ca6)
+
+   [如何分析使用partition解“从无序数组中寻找第K大的值”的时间复杂度？](https://www.zhihu.com/question/50414719/answer/227769600)
+
+

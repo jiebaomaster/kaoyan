@@ -53,7 +53,13 @@ char *itoa(int value, char *string, int radix);
 - 数据类型用 void* 定义 [C queue implementation using void*](https://stackoverflow.com/questions/17731958/c-queue-implementation-using-void-good-or-bad-practice)
 - 数据类型用宏定义 ElemType 定义 [队列的动态链式存储实现—C语言](https://cloud.tencent.com/developer/article/1344611)
 
-### 动态大小的字符串
+### 字符串
+
+#### 函数操作字符串
+
+[C语言中函数返回字符串的四种方法](https://www.cnblogs.com/lifan3a/articles/10942241.html)
+
+#### 动态大小的字符串
 
 [C语言为什么不建议把变量作为数组长度？](https://www.zhihu.com/question/367672681)
 

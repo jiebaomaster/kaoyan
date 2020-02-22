@@ -80,6 +80,7 @@ char *serializeStringResult = (char *) malloc(sizeof(char) * (strlen(serializeSt
 可见以下几例：
 - [寻找链表中的倒数第k个节点](./cp3/findKthToTail.c)
 - [寻找链表中环的入口节点](./cp3/findEntryNodeOfLoop.c)
+- [寻找两个链表第一个公共节点](./cp5/findFirstCommonNodeInTwoList.c)
 
 ## cLion ide使用
 

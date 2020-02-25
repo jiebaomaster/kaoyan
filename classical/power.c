@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../lib/doubleNumberEqual.h"
+#include "../jianzhi_offer/lib/doubleNumberEqual.h"
 
 // P16 数值的整数次方
 

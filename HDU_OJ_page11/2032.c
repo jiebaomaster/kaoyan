@@ -19,7 +19,7 @@ int main() {
                 if (j == i) {
                     yanghuiTriangle[j] = 1;
                 } else {
-                    yanghuiTriangle[j] = yanghuiTriangle[j - 1] + yanghuiTriangle[j];;
+                    yanghuiTriangle[j] = yanghuiTriangle[j - 1] + yanghuiTriangle[j];
                 }
             }
             for (int k = 0; k <= i; ++k) { // output

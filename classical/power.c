@@ -6,7 +6,7 @@
 
 /**
  * 简单快速幂，时间复杂度为 O(logn)
- * 这里用了从上到下的递归计算思路，另一种方法可见 https://blog.csdn.net/JYMiracle/article/details/88372736
+ * 这里用了从上到下的递归计算思路
  * @param base
  * @param unsignedExponent
  * @return
@@ -19,6 +19,24 @@ double powerWithUnsignedExponent(double base, unsigned int unsignedExponent) {
     double result = powerWithUnsignedExponent(base, unsignedExponent / 2);
     result *= result;
     if (unsignedExponent % 2 == 1) { result *= base; }
+    return result;
+}
+
+/**
+ * 简单快速幂的循环写法，https://blog.csdn.net/JYMiracle/article/details/88372736
+ * @param base
+ * @param unsignedExponent
+ * @return
+ */
+double powerWithUnsignedExponentLoop(double base, unsigned int unsignedExponent) {
+    double result = 1;
+    while (unsignedExponent) { // 可看作将十进制指数转化为二进制，逢 1 则乘当前阶的幂
+        if (unsignedExponent % 2) {
+            result *= base;
+        }
+        base *= base; // base作指数放大
+        unsignedExponent /= 2;
+    }
     return result;
 }
 

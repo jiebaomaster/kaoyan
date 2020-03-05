@@ -67,3 +67,11 @@ double solve(double left, double right) {
 
 1. 若节点元素可添加标记，可以使用标记法，先遍历一次标记链表一的所有节点，再遍历链表二直到遇到一个在链表一中出现的节点 [示例](./cp7/commonPointInTwoList.cpp)
 2. 若节点元素不可添加标记，可以使用双指针法，先遍历一次两个链表，双出长度之差 dif，再遍历第二次，此时快指针在较长的链表中先走 dif步，再一起走，直到当两个指针指向同一个节点时停止 [示例](../jianzhi_offer/cp5/findFirstCommonNodeInTwoList.c)
+
+## cp8-搜索专题
+
+### 深度优先搜索
+
+DFS可解决的一个常见问题：
+给定一个序列，枚举这个数列的所有子序列（可以不连续），求一个最优的子序列。
+其中采用递归实现DFS，因此可以用一个栈存储临时遍历序列，可见[示例](./cp8/dfsElementMultiplyUse.cpp)

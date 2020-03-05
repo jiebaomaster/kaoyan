@@ -9,7 +9,7 @@ using namespace std;
  */
 #define rows 6
 #define cols 7
-bool hasVisited[rows][cols];
+bool hasVisited[rows][cols]; // 标记节点是否已经入队，防止重复遍历
 
 /**
  * 递归进行深度优先遍历，标记矩阵中相邻的1

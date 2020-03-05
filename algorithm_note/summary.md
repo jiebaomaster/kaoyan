@@ -75,3 +75,17 @@ double solve(double left, double right) {
 DFS可解决的一个常见问题：
 给定一个序列，枚举这个数列的所有子序列（可以不连续），求一个最优的子序列。
 其中采用递归实现DFS，因此可以用一个栈存储临时遍历序列，可见[示例](./cp8/dfsElementMultiplyUse.cpp)
+
+此外，DFS结合回溯法，可以解决[二维数组中寻找符合要求的路径问题](../jianzhi_offer/cp2/findStringPathInMatrix.c)
+从以上两个例子可以看出，DFS有个好处是可以对某条特殊的路径进行判断，可以最终得到这个路径上的每一个节点（栈保存）
+
+### 广度优先搜索
+
+可以利用其层序的特点求单源最短路径长度，如[迷宫中从起点到终点的最短路径长度求解](./cp8/bfsSingleSourceShortestPath.cpp)
+BFS虽然能求出最短路径长度，但是不能指出路径上的每一个节点
+
+解决[多路径选择（图／矩阵）的遍历](./cp8/find1blockInMatrix.cpp)问题时，dfs和bfs都适用
+
+#### STL 的 queue 容器
+
+当使用 STL 的 queue 时，元素入队的 push 操作只是制造了该元素的一个副本入队，因此在入队后对原元素的修改不会影响队列中的副本。

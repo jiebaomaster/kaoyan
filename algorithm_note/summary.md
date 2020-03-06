@@ -76,8 +76,8 @@ DFS可解决的一个常见问题：
 给定一个序列，枚举这个数列的所有子序列（可以不连续），求一个最优的子序列。
 其中采用递归实现DFS，因此可以用一个栈存储临时遍历序列，可见[示例](./cp8/dfsElementMultiplyUse.cpp)
 
-此外，DFS结合回溯法，可以解决[二维数组中寻找符合要求的路径问题](../jianzhi_offer/cp2/findStringPathInMatrix.c)
-从以上两个例子可以看出，DFS有个好处是可以对某条特殊的路径进行判断，可以最终得到这个路径上的每一个节点（栈保存）
+此外，DFS结合回溯法，可以解决[二维数组中寻找符合要求的路径问题](../jianzhi_offer/cp2/findStringPathInMatrix.c)和[树／二叉树中寻找符合要求的路径问题](./cp9/treeTraversals_PathOfEqualWeight.cpp)
+从以上两个例子可以看出，DFS有个好处是可以对某条特殊的路径进行判断，可以最终得到这个路径上的每一个节点（栈模拟递归路径/数组加当前位置索引模拟）
 
 ### 广度优先搜索
 

@@ -80,7 +80,7 @@ BinaryTree constructChildTree(int *startPreOrder, int *endPreOrder, int *startIn
         while (*rootInOrder != *startPreOrder) { // 在中序遍历结果中寻找根节点的位置
             rootInOrder++;
             leftEndPreOrder++;
-            if (rootInOrder == endInOrder && *rootInOrder != *endInOrder) {
+            if (rootInOrder == endInOrder && *rootInOrder != *startPreOrder) { // 在中序顺序的节点中不存在根节点，即数据错误
                 printf("输入数据有误，不能构成二叉树");
                 return NULL;
             }

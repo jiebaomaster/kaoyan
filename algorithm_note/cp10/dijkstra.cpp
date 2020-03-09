@@ -4,9 +4,9 @@
 using namespace std;
 
 /*
- * P378 给出 N 个城市，M 个无向边。每个城市有一定数量的救援小组，所有边的边权已知。
+ * P378 给出 N 个城市，M 个无向边。每个城市有一定数量的救援小组，所有边的距离已知。
  * 现给出终点和起点，求从起点到终点的最短路径条数及最短路径上的救援小组数量之和，若有多条最短路径，输出救援小组数量最大的。
- * 运用 Dijkstra 算法求单源最短路径，本题属于其变式，只需要修改优化D[v]的代码即可
+ * 运用 Dijkstra 算法求单源最短路径，本题属于其变式（二重尺度：最短路径 + 点权），采用一次 Dijkstra 算法只需要修改优化D[v]的代码即可
  */
 
 const int maxn = 1010;
@@ -85,8 +85,8 @@ void dijkstra(int start) {
  * 2 4
  */
 int main() {
-    int start, dist;
-    cin >> cityNumber >> roadNumber >> start >> dist;
+    int start, dest;
+    cin >> cityNumber >> roadNumber >> start >> dest;
     for (int i = 0; i < cityNumber; ++i) {
         cin >> rescueTeamNumberOfCity[i];
     }
@@ -99,7 +99,7 @@ int main() {
     }
 
     dijkstra(start);
-    cout << pathNumber[dist] << " " << rescueTeamInShortestPath[dist] << endl;
+    cout << pathNumber[dest] << " " << rescueTeamInShortestPath[dest] << endl;
 
     return 0;
 }

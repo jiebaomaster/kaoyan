@@ -13,7 +13,7 @@ using namespace std;
 const int maxn = 510;
 const int INF = 1000000000;
 int G[maxn][maxn]; // 距离图
-int d[maxn]; // 每个城市与起点的距离
+int d[maxn]; // 每个城市与起点的最短距离
 bool isInPath[maxn]; // 集合 S
 vector<int> pre[maxn]; // 每个城市的前序节点，由于会有多条路径距离相等的情况，故每个节点的前序是一个可变长数组
 vector<int> path; // 所求的最短路径

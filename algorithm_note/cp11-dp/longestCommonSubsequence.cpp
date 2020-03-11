@@ -20,6 +20,8 @@ int main() {
     cin >> a >> b;
     int a_length = a.size();
     int b_length = b.size();
+
+    // 边界
     for (int i = 0; i <= a_length; ++i) {
         dp[i][0] = 0;
     }

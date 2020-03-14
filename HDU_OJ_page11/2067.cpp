@@ -18,6 +18,16 @@ using namespace std;
 const int maxn = 36;
 long long dp[maxn][maxn]; // 到达对角线的左下角各个位置的路径条数
 
+/*
+ * input:
+ * 1
+ * 3
+ * 12
+ * output:
+ * 1 1 2
+ * 2 3 10
+ * 3 12 416024
+ */
 int main() {
     memset(dp, 0, sizeof(dp));
     dp[0][0] = 1;

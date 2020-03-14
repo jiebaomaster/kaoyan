@@ -33,6 +33,14 @@ long long calculateC(int i, int j) {
     }
 }
 
+/*
+ * input:
+ * 1
+ * 2
+ * output:
+ * 1
+ * 1
+ */
 int main() {
     // 计算错排
     f[0] = 1;

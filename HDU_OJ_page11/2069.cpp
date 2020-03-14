@@ -31,6 +31,14 @@ void dfs(int n, int i, int coinNum) {
     dfs(n, i + 1, coinNum); // 不选中该位置的硬币，转而选择下一个
 }
 
+/*
+ * input:
+ * 11
+ * 26
+ * output:
+ * 4
+ * 13
+ */
 int main() {
     int n;
     while (scanf("%d", &n) != EOF) {

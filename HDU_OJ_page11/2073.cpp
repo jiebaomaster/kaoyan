@@ -23,6 +23,21 @@ double calPathLengthForm0(int x, int y) {
     return ans;
 }
 
+/*
+ * input:
+ * 5
+ * 0 0 0 1
+ * 0 0 1 0
+ * 2 3 3 1
+ * 99 99 9 9
+ * 5 5 5 5
+ * output:
+ * 1.000
+ * 2.414
+ * 10.646
+ * 54985.047
+ * 0.000
+ */
 int main() {
     int n;
     int x1, y1, x2, y2;

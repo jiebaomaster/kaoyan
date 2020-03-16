@@ -1,6 +1,14 @@
 /*
  * 判断正整数A是否能被正整数B整除
  * http://acm.hdu.edu.cn/showproblem.php?pid=2075
+ *
+ * input:
+ * 2
+ * 4 2
+ * 5 3
+ * output:
+ * YES
+ * NO
  */
 
 #include <cstdio>

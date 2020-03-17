@@ -5,6 +5,16 @@
  * 现在给出Ｎ个朋友的坐标，那么ACBOY应该怎么走才会花费时间最少呢？
  * 由数学知识可得，数列中的中位数到其他数的距离之和最小。
  * http://acm.hdu.edu.cn/showproblem.php?pid=2083
+ *
+ * input:
+ * 2
+ * 2
+ * 2 4
+ * 3
+ * 2 4 6
+ * output:
+ * 2
+ * 4
  */
 
 #include <cstdio>

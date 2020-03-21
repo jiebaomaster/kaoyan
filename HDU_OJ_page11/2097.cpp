@@ -1,6 +1,13 @@
 /*
  * 判断一个数十进制十六进制十二进制表示的各位数之和是否相等
  * http://acm.hdu.edu.cn/showproblem.php?pid=2097
+ *
+ * input:
+ * 2992
+ * 1234
+ * output:
+ * 2992 is a Sky Number.
+ * 1234 is not a Sky Number.
  */
 
 #include <cstdio>

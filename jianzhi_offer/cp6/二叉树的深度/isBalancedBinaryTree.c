@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include "../lib/binaryTree/binaryTree.h"
+#include "../../lib/binaryTree/binaryTree.h"
 
 /**
  * 后续遍历二叉树计算子树深度，在遍历过程中利用子树深度判断子树是否平衡

@@ -3,7 +3,7 @@
  */
 
 #include <stdio.h>
-#include "../lib/binaryTree/binaryTree.h"
+#include "../../lib/binaryTree/binaryTree.h"
 
 /**
  * 获取二叉树的深度

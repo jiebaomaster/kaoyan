@@ -34,6 +34,8 @@ void levelOrder(BinaryTree T);
 /**
  * 通过先序遍历序列的中序遍历序列重建二叉树
  * 该二叉树的节点值不能相等
+ *
+ * 中序可以和先序、后序、层序重建二叉树。但是后三者两两组合不行，原因是后三者均是提供根节点，作用相同，都需要中序来区分出左右子树
  * @param preOrder
  * @param inOrder
  * @param length

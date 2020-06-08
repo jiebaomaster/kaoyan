@@ -101,11 +101,9 @@ char *serializeStringResult = (char *) malloc(sizeof(char) * (strlen(serializeSt
 
 ## TODO
 
-1. 红黑树
-2. partition算法
+- [ ] 红黑树
+- [x] partition算法 
 
    [被忽视的 partition 算法](https://www.jianshu.com/p/daebe1596ca6)
 
    [如何分析使用partition解“从无序数组中寻找第K大的值”的时间复杂度？](https://www.zhihu.com/question/50414719/answer/227769600)
-
-
